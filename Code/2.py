@@ -1,14 +1,14 @@
 # 문제2 : 리스트의 내장함수
 
-# l = [200, 100, 300]
-# <pass>
-# print(l)
-
-# <pass>부분에 리스트 내장함수를 insert를 이용하여 코드를 입력하고 다음과 같이 출력되게 하세요.
-
-# >> 출력
-# [200, 100, 10000, 300]
-
 l = [200, 100, 300]
 l.insert(2, 10000)
 print(l)
+
+# insert :
+# list.insert(index, element)
+# 리스트 안에 리스트, 딕셔너리, 튜플 등 삽입 가능
+
+mixed_list = [[1,2,3], {7,8,9}]
+tuple      = (4,5,6)
+mixed_list.insert(1, tuple)
+print(mixed_list)
